@@ -1,4 +1,4 @@
-var modCommon = angular.module('modCommon');
+modCommon = angular.module('modCommon');
 
 modCommon.controller('ctrlMain', [
     function() {

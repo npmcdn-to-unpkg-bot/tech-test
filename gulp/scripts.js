@@ -9,7 +9,7 @@ let eslint = require('gulp-eslint');
 let vendorScripts = [];
 
 let libraries = [
-    'src/js/vendor/jquery/jquery-2.2.4.min.js',
+    'src/js/vendor/jquery/lib/jquery-2.2.4.min.js',
     'src/js/vendor/angularjs/lib/angular.js',
     'src/js/vendor/angularjs/lib/angular-route.js',
     'src/js/vendor/angularjs/lib/angular-resource.js',
@@ -20,11 +20,11 @@ let libraries = [
 ];
 
 let angularAppScripts = [
-    'src/js/app/app.js',
-    'src/js/app/common/common.js',
-    'src/js/app/contacts/contacts.js',
-    '!src/js/app/**/*.spec.js',
-    'src/js/app/**/*.js'
+    'src/app/app.js',
+    'src/app/common/common.js',
+    'src/app/contacts/contacts.js',
+    '!src/app/**/*.spec.js',
+    'src/app/**/*.js'
 ];
 
 // scripts:vendor

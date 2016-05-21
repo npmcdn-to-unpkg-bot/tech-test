@@ -1,6 +1,7 @@
 let app = angular.module('app', [
     'modCommon',
-    'modContacts'
+    'modTemplates'
+    //'modContacts'
 ]);
 
 app.config(['$routeProvider', '$locationProvider', '$httpProvider',
