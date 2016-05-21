@@ -1,5 +1,5 @@
-<section>
-	<h2>External Contacts</h2>
+<section class="section-contacts" ng-class="{'collapsed': vm.ui.isContactsCollapsed}">
+	<h1>External Contacts</h1>
 	<p>Select the client contacts associated with this offer</p>
 	<table>
 		<thead>
@@ -28,6 +28,6 @@
 		</tbody>
 	</table>
 
-	<button ng-click="vm.toggleCollapsible">Collapse</button>
+	<button class="toggle" ng-click="vm.toggleCollapsible()">{{vm.ui.isContactsCollapsed ? 'Expand' : 'Collapse'}}</button>
 
 </section>

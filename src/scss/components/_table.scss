@@ -1,0 +1,17 @@
+table {
+  font-size: 13px;
+
+  th {
+	padding: 23px 20px;
+	color: $color-primary;
+	text-align: left;
+  }
+
+  td {
+	padding: 12px 20px;
+  }
+
+  tbody tr:nth-child(odd) {
+	background: $color-alt-row;
+  }
+}
