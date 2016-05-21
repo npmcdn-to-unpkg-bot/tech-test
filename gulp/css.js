@@ -1,10 +1,10 @@
 'use strict';
 
-var gulp = require('gulp');
-var sass = require('gulp-ruby-sass');
-var sourcemaps = require('gulp-sourcemaps');
-var minifyCSS = require('gulp-minify-css');
-var concat = require('gulp-concat');
+let gulp = require('gulp');
+let sass = require('gulp-ruby-sass');
+let sourcemaps = require('gulp-sourcemaps');
+let minifyCSS = require('gulp-minify-css');
+let concat = require('gulp-concat');
 
 gulp.task('css', function() {
     return sass('src/scss/app.scss', {sourcemap: true, style: 'compact'})

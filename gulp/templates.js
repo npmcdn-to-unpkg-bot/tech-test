@@ -1,11 +1,11 @@
 'use strict';
 
-var gulp = require('gulp');
-var templateCache = require('gulp-angular-templatecache');
-var minifyHtml = require('gulp-minify-html');
-var plumber = require('gulp-plumber');
+let gulp = require('gulp');
+let templateCache = require('gulp-angular-templatecache');
+let minifyHtml = require('gulp-minify-html');
+let plumber = require('gulp-plumber');
 
-var templates = [
+let templates = [
     'src/app/**/*.html'
 ];
 

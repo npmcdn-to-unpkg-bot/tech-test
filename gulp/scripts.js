@@ -1,13 +1,13 @@
 'use strict';
 
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var babel = require("gulp-babel");
-var concat = require('gulp-concat');
+let gulp = require('gulp');
+let uglify = require('gulp-uglify');
+let babel = require("gulp-babel");
+let concat = require('gulp-concat');
 
-var vendorScripts = [];
+let vendorScripts = [];
 
-var libraries = [
+let libraries = [
     'src/js/vendor/jquery/jquery-2.2.4.min.js',
     'src/js/vendor/angularjs/lib/angular.js',
     'src/js/vendor/angularjs/lib/angular-route.js',
@@ -18,7 +18,7 @@ var libraries = [
     'src/js/vendor/angularjs/lib/angular-touch.js'
 ];
 
-var angularAppScripts = [
+let angularAppScripts = [
     'src/js/app/app.js',
     'src/js/app/common/common.js',
     'src/js/app/contacts/contacts.js',
