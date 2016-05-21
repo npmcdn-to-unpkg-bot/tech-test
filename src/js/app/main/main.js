@@ -1,0 +1,1 @@
+let modMain = angular.module('modMain', ['ngRoute', 'ngSanitize', 'ngAnimate']);

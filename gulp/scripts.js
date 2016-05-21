@@ -21,8 +21,7 @@ let libraries = [
 
 let angularAppScripts = [
     'src/js/app/app.js',
-    'src/js/app/common/common.js',
-    'src/js/app/contacts/contacts.js',
+    'src/js/app/main/main.js',
     '!src/js/app/**/*.spec.js',
     'src/js/app/**/*.js'
 ];

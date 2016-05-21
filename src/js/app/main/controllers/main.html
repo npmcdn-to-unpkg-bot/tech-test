@@ -1,0 +1,33 @@
+<section>
+	<h2>External Contacts</h2>
+	<p>Select the client contacts associated with this offer</p>
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<th>Type</th>
+				<th>Name</th>
+				<th>Title</th>
+				<th>Phone</th>
+				<th>Ext.</th>
+				<th>Fax</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="c in vm.contacts">
+				<td><input type="checkbox" name=""></td>
+				<td>{{c.type}}</td>
+				<td>{{c.name}}</td>
+				<td>{{c.title}}</td>
+				<td>{{c.phone}}</td>
+				<td>{{c.ext}}</td>
+				<td>{{c.fax}}</td>
+				<td>{{c.email}}</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<button ng-click="vm.toggleCollapsible">Collapse</button>
+
+</section>

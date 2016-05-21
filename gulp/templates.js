@@ -5,7 +5,7 @@ let templateCache = require('gulp-angular-templatecache');
 let minifyHtml = require('gulp-minify-html');
 
 let templates = [
-    'src/app/**/*.html'
+    'src/js/app/**/*.html'
 ];
 
 // Templates
@@ -18,5 +18,6 @@ gulp.task('templates', [], function(){
                 standalone: true
             }
         ))
+        .on('error', console.error.bind(console))
         .pipe(gulp.dest('dist/js'));
 });

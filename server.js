@@ -1,7 +1,6 @@
 var express  = require('express');
 var app = express();
 
-// configuration =================
 app.use(express.static(__dirname + '/dist'));
 
 // serve all asset files from necessary directories

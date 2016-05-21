@@ -1,17 +1,19 @@
 let app = angular.module('app', [
 	'modTemplates',
-	'modCommon',
-	'modContacts'
+	'modMain'
 ]);
 
 app.config(['$routeProvider', '$locationProvider', '$httpProvider',
 	function($routeProvider, $locationProvider, $httpProvider) {
 		$routeProvider
 			.when('/contacts', {
-				templateUrl: '/contacts/controllers/contacts.html',
-				controller: 'ctrlContacts',
+				templateUrl: '/main/controllers/main.html',
+				controller: 'ctrlMain',
 				controllerAs: 'vm'
-			});
+			})
+			.otherwise({
+                redirectTo: '/contacts'
+            });
 
 		$locationProvider.html5Mode(true).hashPrefix('!');
 		$httpProvider.defaults.headers.common['Content-Type'] = 'application/json';

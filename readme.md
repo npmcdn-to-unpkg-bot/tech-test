@@ -12,3 +12,4 @@ Installation and build instructions
 
 Nodes:
 _ denotes private function
+Localstorage abstracted to a service, so it can be changed later if needed (cookies, session, etc)
