@@ -27,21 +27,21 @@ let angularAppScripts = [
     'src/js/app/**/*.js'
 ];
 
-// scripts:vendor:dev
+// scripts:vendor
 gulp.task('scripts:vendor', [], function() {
     return gulp.src(vendorScripts)
         .pipe(concat('vendor.min.js'))
         .pipe(gulp.dest('dist/js'));
 });
 
-// scripts:angular:dev
+// scripts:angular
 gulp.task('scripts:angular', [], function() {
     return gulp.src(libraries)
         .pipe(concat('angular.min.js'))
         .pipe(gulp.dest('dist/js'));
 });
 
-// scripts:app:dev
+// scripts:app
 gulp.task('scripts:app', [], function() {
     return gulp.src(angularAppScripts)
         .pipe(eslint())
