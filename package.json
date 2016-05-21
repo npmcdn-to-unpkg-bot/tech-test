@@ -1,0 +1,43 @@
+{
+  "name": "tech-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rathe001/tech-test.git"
+  },
+  "author": "Josh Tummel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rathe001/tech-test/issues"
+  },
+  "homepage": "https://github.com/Rathe001/tech-test#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "*",
+    "babel-preset-stage-0": "*",
+    "connect": "*",
+    "del": "*",
+    "express": "*",
+    "express-request-proxy": "*",
+    "gulp": "*",
+    "gulp-angular-templatecache": "*",
+    "gulp-babel": "*",
+    "gulp-chokidar": "*",
+    "gulp-concat": "*",
+    "gulp-eslint": "*",
+    "gulp-minify-css": "*",
+    "gulp-minify-html": "*",
+    "gulp-plumber": "*",
+    "gulp-remember": "*",
+    "gulp-ruby-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "http-proxy": "*",
+    "request": "*",
+    "serve-static": "*"
+  }
+}
