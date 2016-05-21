@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Dirty cache busted styles -->
-    <script>document.write("<link rel='stylesheet' href='/css/app.css?v=" + Date.now() + "'>");</script>
+    <script>document.write("<link rel='stylesheet' href='css/app.css?v=" + Date.now() + "'>");</script>
 
     <link rel="shortcut icon" href="/favicon.png" />
 
@@ -19,13 +19,16 @@
     <base href="/">
 </head>
 <body ng-app="app">
-    <div id="main" ng-controller="ctrlMain as main">
+    <div id="main" ng-controller="ctrlMain as main" ng-cloak>
+test1
+	    <a href="/contacts">Contacts</a>
+       <div ng-view></div>
 
     </div>
 
     <!-- Dirty cache busted scripts -->
-    <script>document.write("<script type='text/javascript' src='/js/angular.min.js?v=" + Date.now() + "'><\/script>");</script>
-    <script>document.write("<script type='text/javascript' src='/js/templates.min.js?v=" + Date.now() + "'><\/script>");</script>
-    <script>document.write("<script type='text/javascript' src='/js/app.min.js?v=" + Date.now() + "'><\/script>");</script>
+    <script>document.write("<script type='text/javascript' src='js/angular.min.js?v=" + Date.now() + "'><\/script>");</script>
+    <script>document.write("<script type='text/javascript' src='js/templates.min.js?v=" + Date.now() + "'><\/script>");</script>
+    <script>document.write("<script type='text/javascript' src='js/app.min.js?v=" + Date.now() + "'><\/script>");</script>
 </body>
 </html>

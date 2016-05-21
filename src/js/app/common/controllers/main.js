@@ -6,6 +6,10 @@ modCommon.controller('ctrlMain', [
 
         _init();
 
+		/**
+         * Called when module is initialized
+         * @private
+         */
         function _init() {
             // Load all data here
         }

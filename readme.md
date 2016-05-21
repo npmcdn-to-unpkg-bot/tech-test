@@ -9,3 +9,6 @@ Installation and build instructions
 3. gulp dev
 3. node server.js
 4. View the app at http://localhost.com:1111
+
+Nodes:
+_ denotes private function

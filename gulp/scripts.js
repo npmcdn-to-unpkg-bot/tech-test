@@ -20,11 +20,11 @@ let libraries = [
 ];
 
 let angularAppScripts = [
-    'src/app/app.js',
-    'src/app/common/common.js',
-    'src/app/contacts/contacts.js',
-    '!src/app/**/*.spec.js',
-    'src/app/**/*.js'
+    'src/js/app/app.js',
+    'src/js/app/common/common.js',
+    'src/js/app/contacts/contacts.js',
+    '!src/js/app/**/*.spec.js',
+    'src/js/app/**/*.js'
 ];
 
 // scripts:vendor
