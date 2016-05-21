@@ -4,6 +4,7 @@ let gulp = require('gulp');
 let uglify = require('gulp-uglify');
 let babel = require("gulp-babel");
 let concat = require('gulp-concat');
+let eslint = require('gulp-eslint');
 
 let vendorScripts = [];
 
