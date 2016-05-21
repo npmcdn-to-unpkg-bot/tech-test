@@ -1,0 +1,13 @@
+[checkbox], .checkbox {
+  float: left;
+  height: 16px;
+  width: 16px;
+  border: 1px solid $color-border;
+  background: #fff;
+  border-radius:1px;
+  cursor: pointer;
+
+  &.checked {
+	background: $color-primary;
+  }
+}

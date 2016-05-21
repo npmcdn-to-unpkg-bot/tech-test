@@ -1,14 +1,47 @@
 table {
-  font-size: 13px;
+  font-size: 12px;
+  border-radius: $section-radius;
+  border: 1px solid $color-border;
 
-  th {
-	padding: 23px 20px;
-	color: $color-primary;
-	text-align: left;
+  thead {
+	/* The below border-radius code is because it cannot be applied to the table, since it has border-collapse */
+	th {
+	  padding: 23px 20px;
+	  color: $color-primary;
+	  text-align: left;
+	  border-right: 1px solid $color-border;
+
+	  &:first-child {
+		border-radius: $section-radius 0 0 0;
+	  }
+
+	  &:last-child {
+		border-right: none;
+		border-radius: 0 $section-radius 0 0;
+	  }
+	}
   }
 
   td {
 	padding: 12px 20px;
+	border-right: 1px solid $color-border;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	&:last-child {
+	  border-right: none;
+	}
+  }
+
+  tr:last-child td {
+	&:first-child {
+	  border-radius: 0 0 0 $section-radius;
+	}
+
+	&:last-child {
+	  border-radius: 0 0 $section-radius 0;
+	}
   }
 
   tbody tr:nth-child(odd) {
