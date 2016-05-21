@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Rathe001/tech-test#readme",
   "devDependencies": {
+    "babel-eslint": "^6.0.4",
     "babel-preset-es2015": "*",
     "babel-preset-stage-0": "*",
     "connect": "*",
