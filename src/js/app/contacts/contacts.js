@@ -1,1 +1,0 @@
-let modContacts = angular.module('modContacts', []);
