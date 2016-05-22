@@ -1,5 +1,5 @@
 modMain.controller('ctrlMain', ['$scope', 'Storage',
-    function($scope, Storage) {
+    ($scope, Storage) => {
         let vm = this;
 
 		// Assign required items to view model

@@ -1,6 +1,6 @@
 modMain = angular.module('modMain');
 
-modMain.directive('checkbox', [function () {
+modMain.directive('checkbox', [() => {
     return {
         restrict: 'EA',
         scope: {},

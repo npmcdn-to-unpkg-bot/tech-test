@@ -1,7 +1,7 @@
 modMain = angular.module('modMain');
 
 modMain.factory('Storage', [
-    function() {
+    () => {
         let service = {};
 
         service.get = get;

@@ -4,7 +4,7 @@ let app = angular.module('app', [
 ]);
 
 app.config(['$routeProvider', '$locationProvider', '$httpProvider',
-	function($routeProvider, $locationProvider, $httpProvider) {
+	($routeProvider, $locationProvider, $httpProvider) => {
 		$routeProvider
 			.when('/contacts', {
 				templateUrl: '/main/controllers/main.html',
