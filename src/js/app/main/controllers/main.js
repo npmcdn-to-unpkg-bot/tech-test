@@ -1,5 +1,3 @@
-modMain = angular.module('modMain');
-
 modMain.controller('ctrlMain', ['$scope', 'Storage',
     function($scope, Storage) {
         let vm = this;

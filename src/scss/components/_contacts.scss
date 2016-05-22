@@ -1,4 +1,22 @@
 .section-contacts {
+  th {
+	&.selector {
+	  width: 40px;
+	}
+
+	&.ext {
+	  width: 50px;
+	}
+
+	&.fax, &.phone, &.title {
+	  width: 125px;
+	}
+
+	&.email {
+	  width: 95px;
+	}
+  }
+
   .fade.ng-enter,
   .fade.ng-leave,
   .fade.ng-move {

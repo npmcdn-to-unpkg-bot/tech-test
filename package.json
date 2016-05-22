@@ -20,6 +20,7 @@
     "babel-eslint": "^6.0.4",
     "babel-preset-es2015": "*",
     "babel-preset-stage-0": "*",
+    "chai": "^3.5.0",
     "connect": "*",
     "del": "*",
     "express": "*",
@@ -32,13 +33,19 @@
     "gulp-eslint": "*",
     "gulp-minify-css": "*",
     "gulp-minify-html": "*",
-    "gulp-plumber": "*",
-    "gulp-remember": "*",
     "gulp-ruby-sass": "*",
     "gulp-sourcemaps": "*",
     "gulp-uglify": "*",
     "http-proxy": "*",
+    "karma": "^0.13.22",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-browserify": "^5.0.5",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^1.0.1",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "phantomjs-prebuilt": "^2.1.7",
     "request": "*",
-    "serve-static": "*"
+    "serve-static": "*",
+    "watchify": "^3.7.0"
   }
 }

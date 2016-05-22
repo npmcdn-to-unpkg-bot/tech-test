@@ -20,6 +20,10 @@ modMain.directive('checkbox', [function () {
 
 		vm.toggleChecked = toggleChecked;
 
+		/**
+		 * Turns on or off the checkbox
+		 * @public
+		 */
 		function toggleChecked() {
 			vm.bind.checked = !vm.bind.checked;
 		}

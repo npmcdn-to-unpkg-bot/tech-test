@@ -5,14 +5,14 @@
 		<table>
 			<thead>
 				<tr>
-					<th class="sm"></th>
-					<th>Type</th>
-					<th>Name</th>
-					<th>Title</th>
-					<th>Phone</th>
-					<th class="med">Ext.</th>
-					<th>Fax</th>
-					<th>Email</th>
+					<th class="selector"></th>
+					<th class="type">Type</th>
+					<th class="name">Name</th>
+					<th class="title">Title</th>
+					<th class="phone">Phone</th>
+					<th class="ext">Ext.</th>
+					<th class="fax">Fax</th>
+					<th class="email">Email</th>
 				</tr>
 			</thead>
 			<tfoot>
@@ -24,15 +24,15 @@
 				</tr>
 			</tfoot>
 			<tbody>
-				<tr ng-repeat="c in vm.contacts" class="fade">
+				<tr ng-repeat="c in vm.contacts track by $index" class="fade">
 					<td class="check"><checkbox bind="c"></checkbox></td>
-					<td><input type="text" ng-model="c.type"></td>
-					<td><input type="text" ng-model="c.name"></td>
-					<td><input type="text" ng-model="c.title"></td>
-					<td><input type="text" ng-model="c.phone"></td>
-					<td><input type="text" ng-model="c.ext"></td>
-					<td><input type="text" ng-model="c.fax"></td>
-					<td><input type="text" ng-model="c.email"></td>
+					<td><input name="type" type="text" ng-model="c.type"></td>
+					<td><input name="name" type="text" ng-model="c.name"></td>
+					<td><input name="title" type="text" ng-model="c.title"></td>
+					<td><input name="phone" type="phone" ng-model="c.phone"></td>
+					<td><input name="ext" type="number" ng-model="c.ext"></td>
+					<td><input name="phone" type="phone" ng-model="c.fax"></td>
+					<td><input name="email" type="email" ng-model="c.email"></td>
 				</tr>
 			</tbody>
 		</table>
