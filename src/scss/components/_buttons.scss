@@ -1,0 +1,62 @@
+button[class^='btn-'] {
+  display: inline-block;
+  border: none;
+  background: none;
+  color: $color-secondary;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+
+  &:before {
+	content: 'x';
+	float: left;
+	margin: -3px 5px 0 0;
+	height: 20px;
+	width: 20px;
+	border: 1px solid $color-border;
+	border-radius: 3px;
+	font-size: 20px;
+	line-height: 16px;
+	color: $color-border;
+	text-align: center;
+  }
+
+  &:hover {
+	&:before {
+	  background: $color-alt-row;
+	}
+  }
+
+  &.btn-delete:before {
+	color: $color-warning;
+	content: '-';
+  }
+
+  &.btn-add:before {
+	color: $color-primary;
+	content: '+';
+  }
+
+  &.btn-reload {
+	float: left;
+	margin: 100px 0 0 0;
+
+	&:before {
+	  content: '\00bb';
+	}
+  }
+
+  &.btn-toggle {
+	position: absolute;
+	top: 30px;
+	right: 48px;
+
+	&:before {
+	  content: '_';
+	  margin: -4px 10px 0 0;
+	  font-size: 20px;
+	  line-height: 9px;
+	}
+  }
+}

@@ -1,35 +1,45 @@
-<section class="section-contacts" ng-class="{'collapsed': vm.ui.isContactsCollapsed}">
+<section class="section-contacts" ng-class="{'collapsed': vm.isContactsCollapsed}">
 	<h1>External Contacts</h1>
 	<div class="content">
 		<p>Select the client contacts associated with this offer</p>
 		<table>
 			<thead>
 				<tr>
-					<th></th>
+					<th class="sm"></th>
 					<th>Type</th>
 					<th>Name</th>
 					<th>Title</th>
 					<th>Phone</th>
-					<th>Ext.</th>
+					<th class="med">Ext.</th>
 					<th>Fax</th>
 					<th>Email</th>
 				</tr>
 			</thead>
+			<tfoot>
+				<tr>
+					<td colspan="8">
+						<button class="btn-add pull-right" ng-click="vm.addNew()">Add new</button>
+						<button ng-show="vm.showDeleteButton()" ng-click="vm.deleteSelected()" class="btn-delete pull-right">Remove selected</button>
+					</td>
+				</tr>
+			</tfoot>
 			<tbody>
-				<tr ng-repeat="c in vm.contacts">
-					<td><checkbox bind="c"></checkbox></td>
-					<td>{{c.type}}</td>
-					<td>{{c.name}}</td>
-					<td>{{c.title}}</td>
-					<td>{{c.phone}}</td>
-					<td>{{c.ext}}</td>
-					<td>{{c.fax}}</td>
-					<td>{{c.email}}</td>
+				<tr ng-repeat="c in vm.contacts" class="fade">
+					<td class="check"><checkbox bind="c"></checkbox></td>
+					<td><input type="text" ng-model="c.type"></td>
+					<td><input type="text" ng-model="c.name"></td>
+					<td><input type="text" ng-model="c.title"></td>
+					<td><input type="text" ng-model="c.phone"></td>
+					<td><input type="text" ng-model="c.ext"></td>
+					<td><input type="text" ng-model="c.fax"></td>
+					<td><input type="text" ng-model="c.email"></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 
-	<button class="toggle" ng-click="vm.toggleCollapsible()">{{vm.ui.isContactsCollapsed ? 'Expand' : 'Collapse'}}</button>
+	<button class="btn-reload" ng-click="vm.reloadData()">Reload default data</button>
+
+	<button class="btn-toggle" ng-click="vm.toggleCollapsible()">{{vm.isContactsCollapsed ? 'Expand' : 'Collapse'}}</button>
 
 </section>

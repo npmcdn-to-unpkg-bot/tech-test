@@ -21,10 +21,7 @@ modMain.directive('checkbox', [function () {
 		vm.toggleChecked = toggleChecked;
 
 		function toggleChecked() {
-			console.log('hit');
 			vm.bind.checked = !vm.bind.checked;
 		}
     }
 }]);
-
-// <div debug="vm.campaign"></div>

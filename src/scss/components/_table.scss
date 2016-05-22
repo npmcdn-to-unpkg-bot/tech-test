@@ -1,10 +1,11 @@
 table {
+  float: left;
+  width: 100%;
   font-size: 12px;
   border-radius: $section-radius;
   border: 1px solid $color-border;
 
   thead {
-	/* The below border-radius code is because it cannot be applied to the table, since it has border-collapse */
 	th {
 	  padding: 23px 20px;
 	  color: $color-primary;
@@ -19,10 +20,19 @@ table {
 		border-right: none;
 		border-radius: 0 $section-radius 0 0;
 	  }
+
+	  &.sm {
+		width: 40px;
+	  }
+
+	  &.med {
+		width: 50px;
+	  }
 	}
   }
 
   td {
+	position: relative;
 	padding: 12px 20px;
 	border-right: 1px solid $color-border;
 	overflow: hidden;
@@ -32,19 +42,41 @@ table {
 	&:last-child {
 	  border-right: none;
 	}
-  }
 
-  tr:last-child td {
-	&:first-child {
-	  border-radius: 0 0 0 $section-radius;
+	&.check {
+	  padding: 12px;
 	}
 
-	&:last-child {
-	  border-radius: 0 0 $section-radius 0;
+	input {
+	  position: absolute;
+	  padding: 12px 20px;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  background: none;
+	  border: none;
+	  color: $color-secondary;
+	  font-size: 12px;
+	}
+  }
+
+  tr {
+	&:last-child td {
+	  &:first-child {
+		border-radius: 0 0 0 $section-radius;
+	  }
+
+	  &:last-child {
+		border-radius: 0 0 $section-radius 0;
+	  }
 	}
   }
 
   tbody tr:nth-child(odd) {
 	background: $color-alt-row;
+  }
+
+  tfoot td {
+	 border-top: 1px solid $color-border;
   }
 }
